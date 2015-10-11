@@ -24,31 +24,31 @@ public class Peamurdja2_ristmik extends Application {
 
     public void tsykkel(Foor foor, int suund) {
         int count = suund;
-        while (count <10){
+        while (count < 10){
         if (count != 0) {
+            foor.vahetaPunast();
+            foor.paus(4.4);
+            foor.vahetaKollast();
+            foor.paus(0.6);
+            foor.vahetaPunast();
+            foor.vahetaKollast();
+        }
+
             foor.vahetaRohelist();
             foor.paus(3);
             foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
             foor.vahetaKollast();
             foor.paus(0.5);
             foor.vahetaKollast();
-            foor.paus(0.5);
-            foor.vahetaKollast();
-            foor.paus(0.5);
-            foor.vahetaKollast();
-            foor.vahetaPunast();
-            foor.paus(0.5);
-        }
-        foor.vahetaPunast();
-        foor.paus(3);
-        foor.vahetaPunast();
-        foor.vahetaKollast();
-        foor.paus(0.5);
 
         count++;
-            }
-
         }
+
+    }
 
 }
 
