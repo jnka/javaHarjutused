@@ -10,10 +10,22 @@ public class Mangija {
 
 
     public int[] kuhuLasta() {
-        System.out.println("sisesta koordinaadid, kuhu sihtida xxx-yyy");
+        System.out.println("sisesta koordinaadid, kuhu sihtida stiilis: vert-horis");
         String[] input =sc.nextLine().split("-");
         int x = Integer.parseInt(input[0]);
         int y = Integer.parseInt(input[1]);
         return new int[]{x, y};
+    }
+
+    public void pihtas() {
+        System.out.println("Said pihta!");
+    }
+
+    public void moodas() {
+        System.out.println("Läks mööda");
+    }
+
+    public void gameover() {
+        System.out.println("Mäng läbi");
     }
 }

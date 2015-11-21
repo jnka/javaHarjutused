@@ -11,18 +11,19 @@ public class Mang {
 
         //2. Mängu töös hoidmine, tsükliga
         while(meri.laevuOnAlles()){
+            meri.kuvaLaud();
             int[] lask = mangija.kuhuLasta();
-           /* boolean pihtas=meri.saiPihta(lask)//küsib mere käest, kas keegi sai pihta?
+            boolean pihtas=meri.saiPihta(lask);//küsib mere käest, kas keegi sai pihta?
             if (pihtas) {
                 mangija.pihtas();
             }else{
                 mangija.moodas();
-            }*/
+            }
 
         }
 
        // 3. Kui mäng on läbi, mis saab?
-        //mangija.gameover();*/
+        mangija.gameover();
 
 
     }
